@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Demo</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+<body>
+
+
+
+
+
+<div class="main-container">
+    <div class="heading">
+      <h1 class="heading__title">
+
+        <div class="text-center pt-4">
+            <input name="cityname" id="cityname" type="text" autofocus="true" class="form-input" />
+        
+            <button class="btn btn-danger" id="fetch-button">
+              Enter A city for the Weather
+            </button>
+          </div>
+
+      </h1>
+      <p>The Weather for the following city: </p>
+      <p class="heading__credits"><a class="heading__link" target="_blank" id="theTitle"></a></p>
+    </div>
+    <div class="cards">
+      <div class="card card-1">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 id = "containerOne" class="card__title"></h2>
+        <p class="card__apply">
+          <i class="fa fa-cloud" style="font-size:48px;color:red;"></i>
+            <a>Temperature Kelvin:  </a>
+          <a class="card__link" id="weatherOne">Temperature Kelvin:  <i class="fas fa-arrow-right"></i></a>
+          <a>Humidity:  </a>
+          <a class="card__link" id="humidityOne"> <i class="fas fa-arrow-right"></i></a>
+          <a> Wind:  </a>
+          <a class="card__link" id="windOne"> <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="card card-2">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 id = "containerTwo" class="card__title"></h2>
+        <p class="card__apply">
+          <i class="fa fa-cloud" style="font-size:48px;color:red;"></i>
+            <a>Temperature Kelvin:  </a>
+          <a class="card__link" id="weatherTwo">Temperature Kelvin:  <i class="fas fa-arrow-right"></i></a>
+          <a>Humidity:  </a>
+          <a class="card__link" id="humidityTwo"> <i class="fas fa-arrow-right"></i></a>
+          <a> Wind:  </a>
+          <a class="card__link" id="windTwo"> <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="card card-3">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 id = "containerThree" class="card__title"></h2>
+        <p class="card__apply">
+          <i class="fa fa-cloud" style="font-size:48px;color:red;"></i>
+            <a>Temperature Kelvin:  </a>
+          <a class="card__link" id="weatherThree" >Temperature Kelvin:  <i class="fas fa-arrow-right"></i></a>
+          <a>Humidity:  </a>
+          <a class="card__link" id="humidityThree"> <i class="fas fa-arrow-right"></i></a>
+          <a> Wind:  </a>
+          <a class="card__link" id="windThree"> <i class="fas fa-arrow-right"></i></a>
+         
+        </p>
+      </div>
+      <div class="card card-4">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 id = "containerFour" class="card__title"></h2>
+        <p class="card__apply">
+          <i class="fa fa-cloud" style="font-size:48px;color:red;"></i>
+            <a>Temperature Kelvin:  </a>
+          <a class="card__link" id="weatherFour">Temperature Kelvin:  <i class="fas fa-arrow-right"></i></a>
+          <a>Humidity:  </a>
+          <a class="card__link" id="humidityFour"> <i class="fas fa-arrow-right"></i></a>
+          <a> Wind:  </a>
+          <a class="card__link" id="windFour"> <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="card card-5">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 id = "containerFive" class="card__title"></h2>
+        <p class="card__apply">
+          <i class="fa fa-cloud" style="font-size:48px;color:red;"></i>
+            <a>Temperature Kelvin:  </a>
+          <a id="weatherFive" class="card__link" >Temperature Kelvin:  <i class="fas fa-arrow-right"></i></a>
+          <a class="card__link" id="humidityFive"> <i class="fas fa-arrow-right"></i></a>
+          <a> Wind:  </a>
+          <a class="card__link" id="windFive"> <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="card card-1">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">Previous Searches</h2>
+        <p class="card__apply">
+            <a>Cities:  </a>
+          <a class="card__link" id="searches1"></a>  <i class="fas fa-arrow-right"></i></a>
+          <a class="card__link" id="searches2"></a> <i class="fas fa-arrow-right"></i></a>
+          <a class="card__link" id="searches3"></a> <i class="fas fa-arrow-right"></i></a>
+          <a class="card__link" id="searches4"></a> <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+      <script src="./assets/js/script.js"></script>
+
+</body>
+
