@@ -63,7 +63,7 @@ function getLocation() {
     
     //fetches the location data which will be used to call to the weather data in the next function
 
-    var fetchLocation = "http://api.openweathermap.org/geo/1.0/direct?q="+ username+ "&limit=1&appid=c90f7779e82532c0aebec4317257467a";
+    var fetchLocation = "https://api.openweathermap.org/geo/1.0/direct?q="+ username+ "&limit=1&appid=c90f7779e82532c0aebec4317257467a";
 
  
    fetch(fetchLocation)
@@ -93,7 +93,7 @@ function getLocation() {
 
 
 function getWeather(latitude,longitude){
-  var requestUrl = "http://api.openweathermap.org/data/2.5/forecast?lat="+latitude+"&lon="+longitude+"&appid=c90f7779e82532c0aebec4317257467a";
+  var requestUrl = "https://api.openweathermap.org/data/2.5/forecast?lat="+latitude+"&lon="+longitude+"&appid=c90f7779e82532c0aebec4317257467a";
 
   fetch(requestUrl)
  .then(function (response) {
